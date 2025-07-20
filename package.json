@@ -1,0 +1,23 @@
+{
+  "name": "serverless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonuSharan/serverless.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SonuSharan/serverless/issues"
+  },
+  "homepage": "https://github.com/SonuSharan/serverless#readme",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.848.0"
+  }
+}
