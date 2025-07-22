@@ -1,17 +1,17 @@
 const path = require('path');
 const esbuild = require('esbuild');
 
-out_base = ""
-out_dir = ""
+out_base = "src"
+out_dir = "dist/src"
 
-const entryPoints = [ "", ""]
+const entryPoints = [ "src/lambda/serverless.ts"]
 
 esbuild.build({
-    entryPoints,
+    entryPoints, 
     bundle: true,
-    outdir: out_dir,
-    outbase: out_base,
+    outdir: path.join(__dirname, outDir),
+    outbase: functionsDir,
     platform: 'node',
     sourcemap: 'inline',
-    loader: { ".node": "file" },
+    loader: { ".node": "file" }
 })
